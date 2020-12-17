@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.span {
+  text-transform: uppercase;
+  line-height: 2;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn {
+  width: 60px;
+  height: 30px;
+  border-radius: 3px;
+  color: #ffffff;
+  background-color: #f1392d;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #3544a9;
+  color: white;
+}

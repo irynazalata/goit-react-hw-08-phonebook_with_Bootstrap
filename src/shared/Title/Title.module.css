@@ -1,0 +1,17 @@
+.title {
+  text-transform: capitalize;
+  font-size: 25px;
+  margin: 20px 15px;
+  color: #3f4246;
+}
+
+.appear {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: all 500ms linear;
+}
+
+.appearActive {
+  opacity: 1;
+  transform: translateY(0);
+}

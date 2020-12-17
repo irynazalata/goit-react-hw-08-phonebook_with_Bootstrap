@@ -1,0 +1,26 @@
+.container {
+  margin: 40px 0;
+  background-image: url('https://closer.bot/wp-content/uploads/2018/11/920x312-Contacts.jpg');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  background-size: 300px;
+}
+
+.mainTitle {
+  color: #4f5257;
+}
+.title {
+  color: #d42d21;
+  margin-top: 30px;
+}
+.text {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+.listLink {
+  font-weight: 600;
+  text-decoration: none;
+  color: #3544a9;
+}

@@ -1,0 +1,18 @@
+.listLink {
+  text-decoration: none;
+  color: #5b5f64;
+  font-size: 20px;
+  font-weight: 600;
+}
+.listLink:not(:last-child) {
+  margin-right: 20px;
+}
+
+.listLink:hover {
+  color: #3544a9;
+  text-decoration: none;
+}
+
+.listLinkActive {
+  color: #3544a9;
+}
