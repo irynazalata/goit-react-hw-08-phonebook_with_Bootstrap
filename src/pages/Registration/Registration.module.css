@@ -1,49 +1,23 @@
 .title {
-  margin: 20px 0 20px 40px;
+  width: 320px;
+  margin: 20px auto;
   color: #3544a9;
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  margin-left: 10px;
-  background-color: #fff;
-  border-radius: 3px;
-}
-
-.label {
-  font-weight: 600;
-  font-size: 16px;
-  margin-left: 30px;
-}
-
-.input {
-  display: block;
-  width: 300px;
-  height: 25px;
-  margin-top: 10px;
-  padding-left: 10px;
-  font-size: 14px;
-}
-
-.input:focus {
-  border: solid 2px #3544a9;
-  border-radius: 3px;
-  outline: none;
+  position: relative;
+  width: 320px;
+  padding-bottom: 44px;
+  margin: 0 auto;
 }
 
 .button {
-  width: 300px;
+  width: 320px;
   height: 36px;
-  margin-left: 30px;
-  border-radius: 3px;
   color: #ffffff;
   background-color: #3544a9;
   border: none;
   outline: none;
-  cursor: pointer;
-  margin-top: 10px;
 }
 
 .button:hover,

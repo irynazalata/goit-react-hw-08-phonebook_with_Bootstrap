@@ -3,7 +3,7 @@ import NavBar from '../../shared/NavBar/NavBar';
 import { connect } from 'react-redux';
 import { authOperations, authSelectors } from '../../redux/auth';
 import Notification from '../../shared/Notification/Notification';
-import { Container } from 'react-bootstrap';
+import { Container, Form, Button } from 'react-bootstrap';
 import styles from './Registration.module.css';
 
 class Registration extends Component {
@@ -28,47 +28,48 @@ class Registration extends Component {
       <>
         <NavBar />
         <Container>
-          {typeof this.props.error === 'string' && (
-            <Notification
-              error={Boolean(this.props.error)}
-              message="Your registration failed. Try again"
-            ></Notification>
-          )}
           <h1 className={styles.title}>Register page</h1>
-          <form onSubmit={this.handleSubmit} className={styles.form}>
-            <label className={styles.label}>
-              Name
-              <input
+          <Form onSubmit={this.handleSubmit} className={styles.form}>
+            <Form.Group controlId="formBasicName">
+              <Form.Label>Name</Form.Label>
+              <Form.Control
                 type="text"
+                placeholder="Enter your name"
                 name="name"
                 value={name}
                 onChange={this.handleChange}
-                className={styles.input}
               />
-            </label>
-            <label className={styles.label}>
-              Email
-              <input
+            </Form.Group>
+            <Form.Group controlId="formBasicEmail">
+              <Form.Label>Email</Form.Label>
+              <Form.Control
                 type="email"
+                placeholder="Enter your email"
                 name="email"
                 value={email}
                 onChange={this.handleChange}
-                className={styles.input}
               />
-            </label>
-            <label className={styles.label}>
-              Password
-              <input
+            </Form.Group>
+            <Form.Group controlId="formBasicPassword">
+              <Form.Label>Password</Form.Label>
+              <Form.Control
                 type="password"
+                placeholder="Enter minimum 7 symbols"
                 name="password"
                 value={password}
-                placeholder="minimum 7 symbols"
                 onChange={this.handleChange}
-                className={styles.input}
               />
-            </label>
-            <button className={styles.button}>Register</button>
-          </form>
+            </Form.Group>
+            <Button variant="primary" type="submit" className={styles.button}>
+              Register
+            </Button>
+            {typeof this.props.error === 'string' && (
+              <Notification
+                error={Boolean(this.props.error)}
+                message="Your registration failed. Try again"
+              ></Notification>
+            )}
+          </Form>
         </Container>
       </>
     );

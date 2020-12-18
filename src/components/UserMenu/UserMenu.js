@@ -14,9 +14,6 @@ const UserMenu = ({ email, onLogout }) => {
       <Button variant="danger" onClick={onLogout}>
         Logout
       </Button>
-      {/* <button type="button" onClick={onLogout} className={styles.btn}>
-        Logout
-      </button> */}
     </Container>
   );
 };

@@ -1,8 +1,8 @@
 .title {
   text-transform: capitalize;
-  font-size: 25px;
-  margin: 20px 15px;
-  color: #3f4246;
+  width: 320px;
+  margin: 20px auto;
+  color: #3544a9;
 }
 
 .appear {

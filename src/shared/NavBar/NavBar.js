@@ -40,35 +40,6 @@ const NavBar = ({ isAuthenticated, email }) => {
         {!isAuthenticated && <AuthNav />}
       </Container>
     </Navbar>
-    // <div className={styles.container}>
-    //   <ul className={styles.list}>
-    //     <li className={styles.listItem}>
-    //       <NavLink
-    //         exact
-    //         to="/"
-    //         className={styles.listLink}
-    //         activeClassName={styles.listLinkActive}
-    //       >
-    //         Home
-    //       </NavLink>
-    //     </li>
-    //     {isAuthenticated && (
-    //       <li className={styles.listItem}>
-    //         <NavLink
-    //           exact
-    //           to="/contacts"
-    //           className={styles.listLink}
-    //           activeClassName={styles.listLinkActive}
-    //         >
-    //           Contacts
-    //         </NavLink>
-    //       </li>
-    //     )}
-    //   </ul>
-    //     {isAuthenticated && !email && <Loader />}
-    // {isAuthenticated && email && <UserMenu />}
-    // {!isAuthenticated && <AuthNav />}
-    // </div>
   );
 };
 
